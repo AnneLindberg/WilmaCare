@@ -4,13 +4,18 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+import com.example.wilmacare.user.User;
+
+import java.util.List;
+
+public class ProfileViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
+    private List<User> user;
 
-    public HomeViewModel() {
+    public ProfileViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+        mText.setValue("");
     }
 
     public LiveData<String> getText() {
