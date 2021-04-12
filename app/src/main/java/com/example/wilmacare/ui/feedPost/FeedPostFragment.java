@@ -1,4 +1,4 @@
-package com.example.wilmacare.ui.slideshow;
+package com.example.wilmacare.ui.feedPost;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,15 +14,15 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.wilmacare.R;
 
-public class SlideshowFragment extends Fragment {
+public class FeedPostFragment extends Fragment {
 
-    private SlideshowViewModel slideshowViewModel;
+    private FeedPostViewModel slideshowViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         slideshowViewModel =
-                new ViewModelProvider(this).get(SlideshowViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_slideshow, container, false);
+                new ViewModelProvider(this).get(FeedPostViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_feedpost, container, false);
         final TextView textView = root.findViewById(R.id.text_slideshow);
         slideshowViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override

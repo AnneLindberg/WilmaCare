@@ -1,4 +1,4 @@
-package com.example.wilmacare.ui.gallery;
+package com.example.wilmacare.ui.calender;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.wilmacare.R;
 
-public class GalleryFragment extends Fragment {
+public class CanlenderFragment extends Fragment {
 
-    private GalleryViewModel galleryViewModel;
+    private CalenderViewModel calenderViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        galleryViewModel =
-                new ViewModelProvider(this).get(GalleryViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_gallery, container, false);
-        final TextView textView = root.findViewById(R.id.text_gallery);
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        calenderViewModel =
+                new ViewModelProvider(this).get(CalenderViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_calender, container, false);
+        final TextView textView = root.findViewById(R.id.text_calender);
+        calenderViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

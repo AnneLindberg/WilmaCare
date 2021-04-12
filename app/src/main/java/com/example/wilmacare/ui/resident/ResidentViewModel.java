@@ -1,16 +1,21 @@
-package com.example.wilmacare.ui.slideshow;
+package com.example.wilmacare.ui.resident;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class SlideshowViewModel extends ViewModel {
+import com.example.wilmacare.user.User;
+
+import java.util.List;
+
+public class ResidentViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
+    private List<User> user;
 
-    public SlideshowViewModel() {
+    public ResidentViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is slideshow fragment");
+        mText.setValue("");
     }
 
     public LiveData<String> getText() {

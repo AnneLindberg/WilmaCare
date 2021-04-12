@@ -8,18 +8,23 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.wilmacare.ui.home.ProfileFragment"
-        android:label="@string/menu_home"
+        android:label="@string/menu_profile"
         tools:layout="@layout/fragment_profile" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.wilmacare.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_resident"
+        android:name="com.example.wilmacare.ui.resident.ResidentFragment"
+        android:label="@string/menu_resident"
+        tools:layout="@layout/fragment_resident" />
+    <fragment
+        android:id="@+id/nav_calender"
+        android:name="com.example.wilmacare.ui.calender.CanlenderFragment"
+        android:label="@string/menu_Calender"
+        tools:layout="@layout/fragment_calender" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.wilmacare.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_feedpost"
+        android:name="com.example.wilmacare.ui.feedPost.FeedPostFragment"
+        android:label="@string/menu_feed"
+        tools:layout="@layout/fragment_feedpost" />
 </navigation>

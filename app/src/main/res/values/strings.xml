@@ -13,4 +13,5 @@
     <string name="menu_profile">Profil</string>
     <string name="menu_Calender">Kalender</string>
     <string name="menu_feed">Opslagstavlen</string>
+    <string name="menu_resident">Beboer</string>
 </resources>

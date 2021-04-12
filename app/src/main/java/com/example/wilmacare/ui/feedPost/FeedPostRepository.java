@@ -34,7 +34,7 @@ public class FeedPostRepository {
         new DeleteFeedPostAsync(feedPostDAO).execute(feedPost);
     }
 
-    public void deleteAllPost(FeedPost feedPost) {
+    public void deleteAllPost() {
         new DeleteAllFeedPostAsync(feedPostDAO).execute();
     }
 
