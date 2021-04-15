@@ -4,12 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.feedPost.FeedPostFragment">
+    tools:context=".ui.feedPost.FeedPostAdapter">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/feedpost_item"
-     />
+        tools:listitem="@layout/feedpost_item" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+       android:id="@+id/fabAddFeedPost"
+        android:layout_width="wrap_content"
+        android:layout_height="88dp"
+        android:layout_gravity="right"
+        android:src="@drawable/ic_add"
+        android:layout_margin="30dp"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
+

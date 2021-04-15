@@ -1,5 +1,6 @@
 package com.example.wilmacare.Login;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import com.example.wilmacare.MainActivity;
 import com.example.wilmacare.R;
 
 
@@ -36,6 +38,13 @@ public class SignUpTabFragment extends Fragment {
         edtPassWord = root.findViewById(R.id.edtSignUpPassword);
         signIn = root.findViewById(R.id.btnSignUp);
 
+        signIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         edtUserName.setTranslationX(300);
         edtName.setTranslationY(300);

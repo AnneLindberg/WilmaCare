@@ -21,4 +21,12 @@
             android:icon="@drawable/ic_menu_feed"
             android:title="@string/menu_feed" />
     </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/logOut"
+            android:icon="@drawable/logout_icon"
+            android:title="log ud" />
+
+    </group>
 </menu>

@@ -7,36 +7,6 @@
 
 
     <EditText
-        android:id="@+id/edtUserName"
-        android:layout_width="329dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="224dp"
-        android:hint="Username"
-        android:paddingLeft="20dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/edtSignFullName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintWidth_percent=".8" />
-
-    <EditText
-        android:id="@+id/edtSignUpEmail"
-        android:layout_width="329dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:hint="Email"
-        android:paddingLeft="20dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/edtSignUpPhone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintWidth_percent=".8" />
-
-    <EditText
         android:id="@+id/edtSignUpPassword"
         android:layout_width="329dp"
         android:layout_height="wrap_content"
@@ -50,16 +20,44 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintWidth_percent=".8" />
 
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/button_bg"
+        android:text="Sign in"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent=".8" />
+
     <EditText
         android:id="@+id/edtSignFullName"
         android:layout_width="329dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="12dp"
         android:hint="Name"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         app:layout_constraintBottom_toTopOf="@+id/edtSignUpEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/edtSignUpEmail"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:hint="Email"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/edtSignUpPhone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintWidth_percent=".8" />
@@ -78,18 +76,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintWidth_percent=".8" />
 
-    <Button
-        android:id="@+id/btnSignUp"
+    <EditText
+        android:id="@+id/edtUserName"
         android:layout_width="329dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
-        android:text="Sign in"
-        android:textSize="16sp"
-        android:background="@drawable/button_bg"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:hint="Username"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/edtSignFullName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.904"
         app:layout_constraintWidth_percent=".8" />
 
 
