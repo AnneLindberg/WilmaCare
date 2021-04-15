@@ -3,6 +3,7 @@ package com.example.wilmacare;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.FrameLayout;
 
 import com.example.wilmacare.ui.feedPost.FeedPost;
 import com.example.wilmacare.ui.feedPost.FeedPostViewModel;
@@ -19,6 +20,8 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
@@ -26,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private FeedPostViewModel feedPostViewModel;
+    private FrameLayout fragmentContainer;
 
 
     @Override
@@ -33,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
+
+
+
 
         //FeedpostViewModel
         feedPostViewModel = new ViewModelProvider(this).get(FeedPostViewModel.class);
