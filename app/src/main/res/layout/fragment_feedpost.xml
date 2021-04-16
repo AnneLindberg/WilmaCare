@@ -12,12 +12,13 @@
         android:layout_height="match_parent"
         tools:listitem="@layout/feedpost_item" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-       android:id="@+id/fabAddFeedPost"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddFeedPost"
         android:layout_width="wrap_content"
         android:layout_height="88dp"
         android:layout_gravity="right"
-        android:src="@drawable/ic_add"
-        android:layout_margin="30dp"/>
+        android:layout_margin="30dp"
+        android:fontFamily="@font/baloo"
+        android:text="LAV OPSLAG" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

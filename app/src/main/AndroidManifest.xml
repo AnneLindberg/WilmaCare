@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WilmaCare">
-        <activity android:name=".ui.feedPost.AddNoteActivity"></activity>
+        <activity android:name=".ui.feedPost.AddNoteActivity" />
         <activity android:name=".Login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +20,7 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/Theme.WilmaCare.NoActionBar"></activity>
+            android:theme="@style/Theme.WilmaCare.NoActionBar" />
 
         <meta-data
             android:name="preloaded_fonts"
