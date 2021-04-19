@@ -38,7 +38,6 @@ public class FeedPostFragment extends Fragment {
         ViewGroup root = (ViewGroup) inflater.inflate(R.layout.fragment_feedpost, container, false);
         feedPostViewModel = new ViewModelProvider(this).get(FeedPostViewModel.class);
 
-
         View view = inflater.inflate(R.layout.fragment_feedpost, container, false);
 
 
@@ -61,16 +60,7 @@ public class FeedPostFragment extends Fragment {
         });
 
         buttonAddPost = root.findViewById(R.id.btnAddFeedPost);
-
-        buttonAddPost.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.v("Action button clicked", "");
-                Intent intent = new Intent(getActivity(), AddNoteActivity.class);
-                startActivityForResult(intent, ADD_POST_REQUEST);
-            }
-        });
-
+        buttonAddPost.setOnClickListener(this::onClick);
         return view;
     }
 
@@ -92,4 +82,9 @@ public class FeedPostFragment extends Fragment {
         }
     }
 
+    private void onClick(View view1) {
+        Log.v("Action button clicked", "");
+        Intent intent = new Intent(getContext(), AddNoteActivity.class);
+        startActivityForResult(intent, ADD_POST_REQUEST);
+    }
 }
